@@ -1,0 +1,49 @@
+/*=============== CARD ===============*/
+.container {
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+
+  &__title {
+    font-size: var(--h1-font-size);
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 3rem;
+  }
+}
+
+.card {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__product {
+    background-color: var(--body-color);
+    border: 4px solid var(--first-color);
+    padding-block: 1.25rem;
+    text-align: center;
+    display: grid;
+    row-gap: 1.5rem;
+    cursor: pointer;
+  }
+  &__img {
+    width: 200px;
+    justify-self: center;
+    filter: drop-shadow(0 8px 16px hsla(5, 90%, 4%, 0.2));
+    transition: transform 0.3s;
+  }
+  &__name {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+  }
+  &__price {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+  }
+  &__product:hover &__img {
+    transform: scale(1.1);
+  }
+}
