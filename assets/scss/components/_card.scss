@@ -134,3 +134,12 @@
 }
 
 /* Active modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.active-modal .modal__card {
+  transform: rotateX(0);
+}

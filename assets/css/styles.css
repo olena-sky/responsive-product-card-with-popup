@@ -181,6 +181,16 @@ img {
 }
 
 /* Active modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.active-modal .modal__card {
+  transform: rotateX(0);
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 /* For medium devices */
